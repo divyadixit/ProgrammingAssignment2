@@ -1,11 +1,11 @@
 ## These set of functions take a resource intensive operation like calculating
 ## the "Inverse of a matrix" in this case and make it more efficient.
-## It does so by checking if the inverse has been calculated previosly and if so,
-## the function cacheSolve would return the inverted matrix from the cache instead
-## of re-doing the whole calculation. 
+## It does so by checking if the inverse has been calculated previosly and if 
+## so, the function cacheSolve would return the inverted matrix from the cache
+## instead of re-doing the whole calculation. 
 
-## makeCacheMatrix takes a matrix as input and returns a matrix like special object.
-## It contains four functions : get, set, getinv, setinv
+## makeCacheMatrix takes a matrix as input and returns a matrix like special
+## object. It contains four functions : get, set, getinv, setinv
 
 makeCacheMatrix <- function(x = matrix()) {
 		m <- NULL
@@ -24,8 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## cacheSolve takes a matrix as an input, checks if it has the inverted matrix 
-## in the cache memory. If it does, it returns the inverted matrix from the cache
-## or else, it goes on to calculate the inverse of the new matrix. 
+## in the cache memory. If it does, it returns the inverted matrix from the 
+## cache or else, it goes on to calculate the inverse of the new matrix. 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
